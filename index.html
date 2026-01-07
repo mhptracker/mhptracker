@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PGR Tracker</title>
+    <title>Year Tracker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
@@ -3537,7 +3537,7 @@
 
         <aside class="sidebar" id="sidebar">
             <div class="logo">
-                <span class="logo-progressive">PGR</span> TRACKER
+                <span class="logo-progressive">YEAR</span> TRACKER
             </div>
             <nav class="nav">
                 <div class="nav-item active" data-view="timeline">
@@ -3943,7 +3943,7 @@
         <div class="onboarding-modal">
             <div class="onboarding-icon">👋</div>
             <h2 class="onboarding-title">Need help navigating?</h2>
-            <p class="onboarding-text">Take a quick tour to learn how to track your achievements and make the most of PGR Tracker.</p>
+            <p class="onboarding-text">Take a quick tour to learn how to track your achievements and make the most of Year Tracker.</p>
             <div class="onboarding-actions">
                 <button class="onboarding-btn onboarding-btn-primary" id="start-tutorial-btn">Start Short Tutorial</button>
                 <button class="onboarding-btn onboarding-btn-secondary" id="skip-tutorial-btn">Skip Tutorial</button>
@@ -4007,7 +4007,7 @@
                 id: 'welcome',
                 date: today,
                 categoryId: 'other',
-                title: 'Thanks for using PGR Tracker!',
+                title: 'Thanks for using Year Tracker!',
                 personId: null,
                 personName: null,
                 takeaways: null,
@@ -4448,7 +4448,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `pgr-tracker-backup-${new Date().toISOString().split('T')[0]}.json`;
+            a.download = `year-tracker-backup-${new Date().toISOString().split('T')[0]}.json`;
             a.click();
             URL.revokeObjectURL(url);
             toast('Data exported');
@@ -5861,7 +5861,7 @@
             steps: [
                 {
                     id: 'welcome',
-                    title: 'Welcome to PGR Tracker!',
+                    title: 'Welcome to Year Tracker!',
                     text: 'This app is an organization tool you can use to track events throughout your work year to aid in your personal development.',
                     target: null,
                     position: 'center',
